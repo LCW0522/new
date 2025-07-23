@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LCW</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('./ba.lcw.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      color: #5c4a4a;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      background-color: rgba(255, 240, 245, 0.88);
+      border-radius: 12px;
+      box-shadow: 0 0 10px #f3c7d8;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+
+    h1, h3 {
+      text-align: center;
+      color: #d281a2;
+      margin-bottom: 20px;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .image-row img {
+      width: 30%;
+      border-radius: 12px;
+      border: 4px solid #f7b8d0;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .image-row img:hover {
+      transform: rotate(5deg) scale(1.05);
+    }
+
+    a {
+      color: #d26c9b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 8px 0;
+      font-size: 1.1em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: rgba(255, 250, 252, 0.95);
+      border: 2px solid #f4b2cc;
+      margin-bottom: 30px;
+    }
+
+    th, td {
+      border: 1px solid #f4b2cc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #fddbea;
+    }
+
+    tr:hover {
+      background-color: #fff0f5;
+    }
+
+    caption {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #c2618c;
+      margin: 10px 0;
+    }
+
+    form {
+      padding: 20px;
+      background-color: rgba(255, 228, 240, 0.9);
+      border-radius: 10px;
+      border: 2px solid #f4b2cc;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      color: #874a63;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #e9a9c1;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #f7b8d0;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1em;
+      color: white;
+      cursor: pointer;
+      display: block;
+      margin: 30px auto 0;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e890b3;
+    }
+
+    .thank-you {
+      position: fixed;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(255, 182, 193, 0.95);
+      padding: 20px 30px;
+      border-radius: 12px;
+      color: #874a63;
+      font-weight: bold;
+      font-size: 1.2em;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      animation: fadeOut 1.5s ease-out forwards;
+      z-index: 999;
+    }
+
+    @keyframes fadeOut {
+      0% { opacity: 1; transform: translateX(-50%) scale(1); }
+      100% { opacity: 0; transform: translateX(-50%) scale(1.1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>LCW</h1>
+
+    <div class="image-row">
+      <img src="./cat.lcw.jpg" alt="cat 1">
+      <img src="./cat-2.lcw.jpg" alt="cat 2">
+    </div>
+
+    <p style="text-align: center;">
+      <a href="https://www.pinterest.com/" target="_blank">媽咪愛的美甲參考連結</a>
+    </p>
+
+    <section>
+      <h3>自介</h3>
+      <ul>
+        <li>男生</li>
+        <li>可愛</li>
+        <li><small>111.05</small></li>
+      </ul>
+    </section>
+
+    <table>
+      <caption>行事曆</caption>
+      <thead>
+        <tr>
+          <th>分類</th>
+          <th>上午</th>
+          <th>中午</th>
+          <th>下午</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>專業能力</td>
+          <td>吃飯</td>
+          <td>睡覺</td>
+          <td>搗蛋</td>
+        </tr>
+        <tr>
+          <td>飲食</td>
+          <td>鮭魚</td>
+          <td>紅蘿蔔</td>
+          <td>雞肉</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form id="petForm">
+      <div class="form-group">
+        <label for="gender">寵物姓別</label>
+        <input type="text" id="gender" placeholder="請輸入寵物姓別" style="width: 100%;">
+      </div>
+      <div class="form-group">
+        <label for="age">年齡</label>
+        <input type="number" id="age" placeholder="請輸入年齡" style="width: 100%;">
+      </div>
+      <div class="form-group">
+        <label for="petname">寵物姓名</label>
+        <input type="text" id="petname" placeholder="請輸入寵物姓名" style="width: 100%;">
+      </div>
+      <div class="form-group">
+        <label for="owner">主人姓名</label>
+        <input type="text" id="owner" placeholder="請輸入主人姓名" style="width: 100%;">
+      </div>
+      <div class="form-group">
+        <label for="phone">連絡電話</label>
+        <input type="tel" id="phone" placeholder="請輸入聯絡電話" style="width: 100%;">
+      </div>
+
+      <div class="form-group">
+        <div style="display: flex; align-items: center;">
+          <span style="display: inline-block; width: 100px; font-weight: bold; color: #874a63;">是否黏人</span>
+          <label style="margin-right: 40px;">
+            <input type="radio" name="clingy" value="yes"> 是
+          </label>
+          <label>
+            <input type="radio" name="clingy" value="no"> 否
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div style="display: flex; align-items: center;">
+          <span style="display: inline-block; width: 100px; font-weight: bold; color: #874a63;">喜歡的零食</span>
+          <label style="margin-right: 40px;">
+            <input type="checkbox" name="snack" value="freeze"> 凍乾
+          </label>
+          <label style="margin-right: 40px;">
+            <input type="checkbox" name="snack" value="shrimp"> 蝦子
+          </label>
+          <label>
+            <input type="checkbox" name="snack" value="salmon"> 鮭魚
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>備註</label>
+        <textarea rows="3" placeholder="請輸入寵物喜好或注意事項" style="width: 100%"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="nation">國家</label>
+        <select id="nation">
+          <option value="TW">台灣</option>
+          <option value="JP">日本</option>
+          <option value="US">美國</option>
+          <option value="CN">中國</option>
+        </select>
+      </div>
+
+      <button type="submit">送出表單</button>
+    </form>
+
+    <div class="heart-container" id="heartContainer"></div>
+  </div>
+
+  <script>
+    const form = document.getElementById("petForm");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const thank = document.createElement("div");
+      thank.className = "thank-you";
+      thank.textContent = "感謝填寫表單！";
+
+      document.body.appendChild(thank);
+
+      setTimeout(() => {
+        thank.remove();
+      }, 1500);
+    });
+  </script>
+</body>
+</html>
